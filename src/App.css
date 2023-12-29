@@ -10616,3 +10616,15 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+
+header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  min-height: 10%;
+}
+
+.home {
+  padding-top: 0;
+}
