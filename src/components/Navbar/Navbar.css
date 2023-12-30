@@ -1,0 +1,67 @@
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  min-height: 5%;
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #ff9801;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #ff9801;
+  height: 5%;
+  width: 210px;
+}
+
+.logo-container img {
+  height: 100%;
+  width: 76px;
+  margin-right: 10px;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: large;
+  color: rgb(203, 71, 71);
+  transition: background-color 0.3s ease;
+}
+
+/* Change background on hover */
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.scrolled {
+  background-color: #ffd699;
+  transition: background-color 0.5s ease;
+}
