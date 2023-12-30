@@ -18,7 +18,7 @@
 
 .slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* Animation */
@@ -34,8 +34,3 @@
     z-index: 2;
   }
 }
-
-/* Animation duration */
-/* .carousel {
-  animation: rotate 9s infinite;
-} */

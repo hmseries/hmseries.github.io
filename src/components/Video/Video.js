@@ -67,13 +67,13 @@ const Video = () => {
     "EGLqWSCjH8o",
   ];
   return (
-    <div className="video-container test-border">
+    <div id="video" className="video-container">
       {videoIds.map((id, index) => (
-        <div key={index} class="video">
+        <div key={index} className="video">
           <iframe
             src={"https://www.youtube.com/embed/" + id}
-            frameborder="0"
-            allowfullscreen
+            frameBorder="0"
+            allowFullScreen
           ></iframe>
         </div>
       ))}
