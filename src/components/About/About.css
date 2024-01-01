@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   background-color: #f4f4f4;
 }
 
 .about-content {
   max-width: 80%;
+  margin: 10px auto 10px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
