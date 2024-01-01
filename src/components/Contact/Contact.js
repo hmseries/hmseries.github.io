@@ -31,6 +31,11 @@ const Contact = () => {
       profileHighlight: "Sharing beautiful moments",
       link: "https://www.instagram.com/hm_series_music/",
     },
+    {
+      icon: "linkedin",
+      profileHighlight: "Hire Me/Get Hired",
+      link: "https://www.linkedin.com/in/neel-milton-5b33bb2a2/",
+    },
     // Add more social media links as needed
   ];
 
@@ -98,7 +103,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="contact-form">
-      <div id="social-contact" className="test-border">
+      <div id="social-contact">
         <h2>Social Media Profiles</h2>
         <ul className="social-list">
           {socialMediaLinks.map((socialLink, index) => (

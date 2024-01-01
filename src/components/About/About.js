@@ -24,7 +24,7 @@ const About = () => {
     },
   ];
   return (
-    <div id="about" className="about test-border">
+    <div id="about" className="about">
       <div className="about-content">
         <h1>About Us</h1>
         <p>
