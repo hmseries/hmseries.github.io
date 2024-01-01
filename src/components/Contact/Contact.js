@@ -34,7 +34,7 @@ const Contact = () => {
     {
       icon: "linkedin",
       profileHighlight: "Hire Me/Get Hired",
-      link: "https://www.instagram.com/hm_series_music/",
+      link: "https://www.linkedin.com/in/neel-milton-5b33bb2a2/",
     },
     // Add more social media links as needed
   ];
