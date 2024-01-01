@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="logo-container">
         <img src="logoV3.jpg" alt="Logo" />
         <a href="https://www.youtube.com/@HMSeries/community" target="_blank">
-          <h1>HMSeries</h1>
+          <h1>HM Series</h1>
         </a>
       </div>
       <ul className="nav-links">
@@ -53,6 +53,16 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div className="dropdown">
+        <button className="dropdown-toggle">Quick Links</button>
+        <div className="dropdown-menu">
+          {navItems.map((item, index) => (
+            <a key={index} href={"#" + item.link} className="menu-item">
+              {item.displayName}
+            </a>
+          ))}
+        </div>
+      </div>
     </nav>
   );
 };
