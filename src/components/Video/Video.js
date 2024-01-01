@@ -72,7 +72,6 @@ const Video = () => {
         <div key={index} className="video">
           <iframe
             src={"https://www.youtube.com/embed/" + id}
-            frameBorder="0"
             allowFullScreen
           ></iframe>
         </div>
