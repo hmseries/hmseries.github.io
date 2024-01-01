@@ -1,10 +1,10 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Carousel from "./components/Carousel/Carousel";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Video from "./components/Video/Video";
+const Video = lazy(() => import("./components/Video/Video"));
 
 function App() {
   return (
@@ -13,7 +13,9 @@ function App() {
       <div id="home">
         <Carousel />
       </div>
-      <Video />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Video />
+      </Suspense>
       <About />
       <Contact />
     </div>

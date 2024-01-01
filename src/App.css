@@ -71,19 +71,6 @@ hr.light {
   color: rgba(255, 255, 255, 0.75);
 }
 
-header {
-  background-color: transparent;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  min-height: 8%;
-  transition: background-color 0.3s ease;
-}
-
-header:hover {
-  background-color: #ff9801;
-}
-
 .scrolled {
   background-color: #ffd699;
   transition: background-color 0.5s ease;
