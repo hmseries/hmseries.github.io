@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Carousel from "./components/Carousel/Carousel";
@@ -7,25 +7,10 @@ import Contact from "./components/Contact/Contact";
 import Video from "./components/Video/Video";
 
 function App() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  const handleScroll = () => {
-    setScrollPosition(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div id="app">
       <Navbar />
-      {/* <header className={scrollPosition > 729 ? "scrolled" : ""}>
-      </header> */}
-      <div id="home" className="home">
+      <div id="home">
         <Carousel />
       </div>
       <Video />

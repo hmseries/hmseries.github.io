@@ -35,18 +35,12 @@ const Navbar = () => {
     };
   }, []);
 
-  let navClass = "navbar test-border" + scrollPosition > 729 ? " scrolled" : "";
-
   return (
     <nav
       id="navbar"
-      className={
-        scrollPosition > 729
-          ? "navbar test-border scrolled"
-          : "navbar test-border"
-      }
+      className={scrollPosition > 729 ? "navbar scrolled" : "navbar"}
     >
-      <div className="logo-container test-border">
+      <div className="logo-container">
         <img src="logoV3.jpg" alt="Logo" />
         <a href="https://www.youtube.com/@HMSeries/community" target="_blank">
           <h1>HMSeries</h1>
