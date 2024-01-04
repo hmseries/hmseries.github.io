@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Carousel from "./components/Carousel/Carousel";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import RecentHighlight from "./components/RecentHighlight/RecentHighlight";
 const Video = lazy(() => import("./components/Video/Video"));
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <div id="home">
         <Carousel />
       </div>
+      <RecentHighlight />
       <Suspense fallback={<div>Loading...</div>}>
         <Video />
       </Suspense>

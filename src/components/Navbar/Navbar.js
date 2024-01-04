@@ -9,6 +9,10 @@ const Navbar = () => {
       displayName: "Home",
     },
     {
+      link: "recent-highlight",
+      displayName: "Recent Highlight",
+    },
+    {
       link: "video",
       displayName: "Video",
     },
