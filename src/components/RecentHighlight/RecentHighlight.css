@@ -1,0 +1,50 @@
+.recent-highlight-container {
+  overflow: hidden;
+  height: auto;
+  padding: 5px;
+}
+
+.events-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+.events-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.event {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  display: inline-block;
+  white-space: normal;
+  transition: background-color 0.3s;
+  position: relative;
+}
+.event:hover {
+  background-color: #cfbf7c;
+}
+
+.important-event {
+  background-color: #ffcc00;
+  background: linear-gradient(
+    45deg,
+    #fbdbab,
+    #fcba57,
+    #ff9801,
+    #fcba57,
+    #fbdbab
+  );
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
