@@ -14,7 +14,7 @@ function App() {
       <div id="home">
         <Carousel />
       </div>
-      <RecentHighlight />
+      <RecentHighlight title={"Highlights"} />
       <Suspense fallback={<div>Loading...</div>}>
         <Video />
       </Suspense>
