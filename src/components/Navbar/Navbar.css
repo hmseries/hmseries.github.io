@@ -11,6 +11,12 @@
   transition: background-color 0.3s ease;
 }
 
+.stretch-item {
+  flex-grow: 1;
+  align-self: stretch;
+  padding: 5px;
+}
+
 .navbar:hover {
   background-color: #ff9801;
 }
@@ -32,12 +38,13 @@
 .logo-container a {
   text-decoration: none;
   color: black;
+  width: max-content;
   transition: background-color 0.3s ease;
 }
 
 .nav-links {
   list-style-type: none;
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   padding: 10px;
@@ -68,7 +75,7 @@
 
 .dropdown {
   position: relative;
-  display: none;
+  display: flex;
   padding: 0 10px;
 }
 

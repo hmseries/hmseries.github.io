@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import "./Navbar.css";
+import RecentHighlight from "../RecentHighlight/RecentHighlight";
 
 const Navbar = () => {
   const navItems = [
     {
       link: "home",
       displayName: "Home",
-    },
-    {
-      link: "recent-highlight",
-      displayName: "Recent Highlight",
     },
     {
       link: "video",
@@ -49,6 +46,9 @@ const Navbar = () => {
         <a href="https://www.youtube.com/@HMSeries/community" target="_blank">
           <h1>HM Series</h1>
         </a>
+      </div>
+      <div className="stretch-item">
+        <RecentHighlight showOnlyImportant={true} />
       </div>
       <ul className="nav-links">
         {navItems.map((item, index) => (
