@@ -58,7 +58,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="dropdown">
-        <button className="dropdown-toggle">Quick Links</button>
+        <button className="dropdown-toggle">Links</button>
         <div className="dropdown-menu">
           {navItems.map((item, index) => (
             <a key={index} href={"#" + item.link} className="menu-item">

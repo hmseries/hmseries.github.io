@@ -124,4 +124,17 @@
   .dropdown {
     display: inline-block;
   }
+
+  .navbar {
+    min-height: 2%;
+  }
+
+  .logo-container img {
+    width: 50px;
+    margin-right: 1px;
+  }
+
+  .logo-container a {
+    display: none;
+  }
 }

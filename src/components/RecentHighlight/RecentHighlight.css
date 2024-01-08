@@ -53,3 +53,15 @@
     transform: translateX(-100%);
   }
 }
+
+@media (max-width: 767px) {
+  .recent-highlight-container {
+    min-height: 3%;
+    height: 100%;
+    padding: 2px 0;
+  }
+
+  .event {
+    padding: 2px;
+  }
+}
